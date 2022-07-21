@@ -7,7 +7,6 @@
   font-family: "JetBrains Mono", monospace;
   color: #fcfcfd;
   position: relative;
-  top: 5rem;
 }
 
 #text {
@@ -16,24 +15,16 @@
 
 #quote-box {
   width: 50rem;
-  height: 20rem;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
   box-shadow: #c38d9e 0px 5px 15px;
   background-color: #e8a87c;
   border-radius: 2%;
   text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2rem;
 }
 
 #new-quote {
-  position: absolute;
-  top: 15rem;
-  left: 15rem;
-}
-
-#tweet-quote {
-  position: absolute;
-  top: 15rem;
-  left: 25rem;
+  margin-right: 1rem;
 }
