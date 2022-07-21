@@ -17,12 +17,16 @@ export function Quote() {
         {data.initialized ? data.quote : "..."}
       </q>
       <p id="author" className="text">
-        {data.author}
+        {data.initialized ? `- ${data.author}- ` : ""}
       </p>
       <button onClick={onNewQuote} className="button" id="new-quote">
         New Quote
       </button>
-      <a className="button" id="tweet-quote" href="_blank">
+      <a
+        className="button"
+        id="tweet-quote"
+        href={`https://twitter.com/intent/tweet?text=${data.quote}`}
+      >
         Tweet Quote
       </a>
     </div>
