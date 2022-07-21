@@ -26,7 +26,7 @@
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow, transform;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .button:focus {
@@ -42,4 +42,11 @@
 .button:active {
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+@media all and (max-width: 30em) {
+  .button {
+    width: 100%;
+    margin: 2% auto;
+  }
 }
